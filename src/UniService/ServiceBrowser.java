@@ -31,7 +31,9 @@ public class ServiceBrowser {
     void loadServiсе(Object serviceSelection) {
 
         try {
+
             Service svc = (Service) server.getService(serviceSelection);
+
             mainPanel.removeAll();
             mainPanel.add(svc.getGuiPanel());
             mainPanel.validate();
